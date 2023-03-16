@@ -1,0 +1,648 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+
+
+
+
+
+.header{
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+    position: relative;
+}
+nav{
+	width: 98%;
+	height: 10vh;
+	margin: auto;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav img{
+	width: 80px;
+	cursor: pointer;
+}
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 10px;
+	position: relative;
+}
+.nav-links ul li a{
+	text-decoration: none;
+	color: rgb(32,200, 0);
+	text-transform: uppercase;
+}
+.nav-links ul li::after{
+	content: '';
+	height: 2px;
+	width: 0;
+	background: rgb(32,200, 0);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: rgb(32,200, 0);
+}
+.text-box h1{
+	font-size: 70px;
+	margin-top: 80px;
+}
+.text-box p{
+	font-size: 25px;
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+button{
+	font-size: 15px;
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid rgb(32,200, 0);
+	background: transparent;
+	color: rgb(32,200, 0);
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+span{
+	background: rgb(32,200,0);
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+button:hover span{
+	width: 100%;
+}
+/* the border section is empty in the botton:hover{} because we dont want to
+ show hide the border at hover effect. if we can write a none in it it wil hide the border. 
+*/
+button:hover{
+	border: ;
+    color: rgb(0, 0, 0);
+}
+nav .fa{
+	display: none;
+}
+@media(max-width: 700px){
+	.text-box h1{
+	font-size: 36px;
+	margin-top: 80px;
+}
+    .text-box p{
+    	font-size: 19px;
+    }
+    .nav-links ul li{
+    	display: block;
+    	margin: 25px 20px;
+    	
+    }
+    .nav-links{
+    	position: fixed;
+    	background: rgb(0,0,0);
+    	height: 100vh;
+    	width: 200px;
+    	top: 0;
+    	right: -200px;
+    	text-align: left;
+    	z-index: 2;
+    	transition: 1s;
+    }
+nav img{
+	width: 60px;
+	cursor: pointer;
+}
+nav .fa{
+	display: block;
+	color: rgb(32, 200, 0);
+	margin: 20px;
+	font-size: 22px;
+	cursor: pointer;
+}
+}
+
+.mrtrojan h2{
+	color: rgb(32, 200, 0);
+    text-align: center;
+    padding-bottom: 30px;
+    transform: translateY(5600%);
+}
+.mrtrojan a{
+	text-decoration: none;
+	color: rgb(32, 200, 0);
+}
+@media(max-width: 700px){
+	.footer p{
+		font-size: 15px;
+		text-align: center;
+	}
+	.mrtrojan h2{
+		transform: translateY(7400%);
+	}
+	.footer{
+	  transform: translateY(240%);
+	}
+	.mrtrojan a{
+	text-decoration: none;
+	color: rgb(32, 200, 0);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------properties of professional page------------------------------*/
+
+
+
+
+
+
+
+
+
+
+.header h1{
+color: rgb(32, 200, 0);
+font-size: 50px;
+padding-top: 20px;
+text-align: center;
+}
+
+.header p{
+	color: rgb(32, 200, 0);
+	text-align: center;
+	padding-top: 10px;
+	font-size: 25px;
+	f
+}
+.para p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 250px;
+}
+.para1 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para2 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para3 p{
+	color: rgb(32, 130, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para4 p{
+color: rgb(32, 200, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para5 p{
+	color: rgb(32, 100, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para6 p{
+	color: rgb(32, 200, 0);
+	font-size: 23px;
+	text-align: center;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para7 p{
+		color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para8 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para9 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para10 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para11 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para12 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para13 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;	
+}
+.para14 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para15 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para16 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para17 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para18 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para19 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para20 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para21 p{
+	color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+}
+.para22 p{
+color: rgb(32, 150, 0);
+	font-size: 23px;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;	
+}
+.para23 p{
+	color: rgb(32, 200, 0);
+	font-size: 23px;
+	text-align: center;
+	padding-left: 250px;
+	padding-top: 20px;
+	padding-right: 250px;
+
+}
+
+
+
+/*---------------proprerties of professional page for mobile mod-------------------*/
+
+
+
+
+@media(max-width: 700px){
+
+
+
+.header h1{
+color: rgb(32, 200, 0);
+font-size: 35px;
+padding-top: 20px;
+text-align: center;
+}
+
+.header p{
+	color: rgb(32, 200, 0);
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	f
+}
+.para p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.para1 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para2 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para3 p{
+	color: rgb(32, 130, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para4 p{
+color: rgb(32, 200, 0);
+	font-size: 20px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.para5 p{
+	color: rgb(32, 100, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para6 p{
+	color: rgb(32, 200, 0);
+	font-size: 20px;
+	text-align: center;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para7 p{
+		color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para8 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para9 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para10 p{
+	color: rgb(32, 150, 0);
+	font-size: 20px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para11 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para12 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para13 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;	
+}
+.para14 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para15 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para16 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para17 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para18 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para19 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para20 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para21 p{
+	color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+.para22 p{
+color: rgb(32, 150, 0);
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;	
+}
+.para23 p{
+	color: rgb(32, 200, 0);
+	font-size: 20px;
+	text-align: center;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+
+}
+
+
+
+
+
+}
