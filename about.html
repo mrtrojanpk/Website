@@ -145,46 +145,43 @@
 
 
 
-<!-------------------Javascript code for responsive screen---------->
+<!---------------------------------------Javascript------------------------------------->
+  
+  
+  <script type="text/javascript">
+  // Redirect to the About page based on screen size
+  const aboutLink = document.querySelector('a[href="about.html"]');
+  aboutLink.addEventListener('click', redirectToAbout);
 
-
-<script type="text/javascript">
-
-var currentWidth = window.innerWidth;
-
-function checkWidth() {
-  if (currentWidth < 700 && window.innerWidth >= 700) {
-    window.location.href = "index.html";
-  } else if (currentWidth >= 700 && window.innerWidth < 700) {
-    window.location.href = "mobile.html";
+  function redirectToAbout(event) {
+    event.preventDefault();
+    if (window.innerWidth >= 700) {
+      window.location.href = 'about.html';
+    } else {
+      window.location.href = 'mobile.html';
+    }
   }
-  currentWidth = window.innerWidth;
-}
 
-checkWidth(); // call the function initially
+  // Show/hide the mobile menu
+  const navLinks = document.getElementById('navLinks');
+  const menuIcon = document.querySelector('.fa-bars');
+  const closeIcon = document.querySelector('.fa-times-circle');
 
-window.addEventListener("resize", function() {
-  checkWidth(); // call the function on every resize event
-});
+  menuIcon.addEventListener('click', showMenu);
+  closeIcon.addEventListener('click', hideMenu);
 
-
-
-</script>
-
-
-
-    <!-----------------------------------Java Script----------------------------------->
-
-
-<script type="text/javascript">
-  var navLinks = document.getElementById("navLinks");
-  function showmenu(){
-    navLinks.style.right = "0";
+  function showMenu() {
+    navLinks.style.right = '0';
   }
-  function hidemenu(){
-    navLinks.style.right = "-200px";
+
+  function hideMenu() {
+    navLinks.style.right = '-200px';
   }
 </script>
+<!----------------------------------Javascript ended------------------------------------>
+  
+  
+  
 
 </body>
 </html>
