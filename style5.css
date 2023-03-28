@@ -140,6 +140,15 @@ nav .fa{
 
 
 
+/*--------------Properties for div-----------*/
+
+
+{
+  display: none;
+}
+
+
+
 
 
 /*--------------my edited--------*/
@@ -162,7 +171,7 @@ body .card {
   left: 0;
   right: 0;
   margin: auto;
-  top: 10%;
+  top: 0%;
   bottom: 0;
   border:2px solid rgb(32, 200, 0);
   border-radius: 3px;
@@ -444,3 +453,173 @@ button:hover{
   border: ;
     color: rgb(0, 0, 0);
 }
+
+
+
+
+
+/*Properties for view for mobile*/
+@media(min-width:700px){
+  .main{
+    display: none;
+  }
+}
+@media(max-width: 700px){
+  .card{
+    display: none;
+  }
+}
+
+
+@media(max-width: 700px){
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  body{
+    background: black;
+    width: 98%;
+  }
+   .main{
+    margin-top:-40px;
+    width: 98%;
+    border: 0px solid rgb(32, 200, 0);
+  }
+  .image{
+    top: 10px;
+    text-align: center;
+  }
+  .image img{
+    padding-top: 40px;
+    width: 50%;
+  }
+
+.one h1{
+  font-size: 60px;
+  color: rgb(32, 200, 0);
+  text-align: center;
+  margin-top: -45px;
+}
+    .main h1{
+    padding-top: 10px;
+    color: rgb(32, 200, 0);
+    padding-left: 30px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+   .main ul {
+  list-style-type: none;
+  padding: 0 0 0 40px;
+  margin: 10px 0 0 0;
+  margin-left: -13px;
+}
+ .main ul li {
+  display: inline;
+  /*color: #e3e3e3;*/
+  color: rgb(32, 200, 0);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 0 40px 0 0;
+}
+
+ .main p{
+  color: rgb(32, 200, 0);
+  padding-top: 15px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+
+
+ .main .card_right__rating__stars {
+  position: relative;
+  right:95px;
+  margin:  10px 0 10px 0 ;
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  /* hover previous stars in list */
+}
+ .main .card_right__rating__stars fieldset,
+ .main .card_right__rating__stars label {
+  margin: 0;
+  padding: 0;
+}
+ .main .card_right__rating__stars .rating {
+  border: none;
+}
+ .main .card_right__rating__stars .rating > input {
+  display: none;
+}
+ .main .card_right__rating__stars .rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  display: inline-block;
+  content: "";
+  font-family: FontAwesome;
+}
+ .main .card_right__rating__stars .rating > .half:before {
+  content: "";
+  position: absolute;
+}
+ .main .card_right__rating__stars .rating > label {
+  color: #ddd;
+  float: right;
+}
+ .main .card_right__rating__stars .rating > input:checked ~ label,
+ .main .card_right__rating__stars .rating:not(:checked) > label:hover,
+ .main .card_right__rating__stars .rating:not(:checked) > label:hover ~ label {
+  /*color: #ffd700;*/
+  color: rgb(32, 200, 0);
+}
+ .main .card_right__rating__stars .rating > input:checked + label:hover,
+ .main .card_right__rating__stars .rating > input:checked ~ label:hover,
+ .main .card_right__rating__stars .rating > label:hover ~ input:checked ~ label,
+ .main .card_right__rating__stars .rating > input:checked ~ label:hover ~ label {
+  /*color: #ffed85;*/
+  color: rgb(32, 200, 0);
+}
+
+
+  .main .card-button {
+  padding: 0 0 0 40px;
+  margin: 30px;
+}
+  .main .card-button i{
+  margin-left: -20px;
+  margin-right: 5px;
+}
+
+ .main .card-button a {
+  /*color: #ffda00;*/
+  color: rgb(32, 200, 0);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  /*border: 2px solid #ffda00;*/
+  border: 2px solid rgb(32, 200, 0);
+  padding: 10px 10px 10px 40px;
+  font-size: 16px;
+  /*background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);*/
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 7% 50%;
+  border-radius: 5px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+ .main .card-button a:hover {
+  color: #000000;
+  /*background-color: #ffda00;*/
+  background-color: rgb(32, 200, 0);
+  /*background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);*/
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+
+}
+
