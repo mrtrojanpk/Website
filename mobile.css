@@ -224,7 +224,7 @@ nav .fa{
 	font-size: 60px;
 	color: rgb(32, 200, 0);
 	text-align: center;
-	margin-top: -30px;
+	margin-top: -35px;
 }
 
 
@@ -235,7 +235,7 @@ nav .fa{
 		width: 98%;
 	}
 	.main{
-		margin-top:-20px;
+		margin-top:-25px;
 		width: 98%;
 		border: 0px solid rgb(32, 200, 0);
 	}
@@ -262,7 +262,7 @@ nav .fa{
   list-style-type: none;
   padding: 0 0 0 40px;
   margin: 10px 0 0 0;
-padding-left:-10px;
+  margin-left: -13px;
 }
 .main ul li {
   display: inline;
@@ -270,7 +270,7 @@ padding-left:-10px;
   color: rgb(32, 200, 0);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   padding: 0 40px 0 0;
 }
 
@@ -286,7 +286,7 @@ padding-left:-10px;
 
 .main .card_right__rating__stars {
   position: relative;
-  right:130px;
+  right:95px;
   margin:  10px 0 10px 0 ;
   /***** CSS Magic to Highlight Stars on Hover *****/
   /* hover previous stars in list */
