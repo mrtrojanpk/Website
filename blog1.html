@@ -311,18 +311,40 @@ layer of security to your accounts.
 
 
 
-<!-----------------------------------Java Script----------------------------------->
+<!---------------------------------------Javascript------------------------------------->
+  
+  
+  <script type="text/javascript">
+  // Redirect to the About page based on screen size
+  const aboutLink = document.querySelector('a[href="about.html"]');
+  aboutLink.addEventListener('click', redirectToAbout);
 
+  function redirectToAbout(event) {
+    event.preventDefault();
+    if (window.innerWidth >= 700) {
+      window.location.href = 'about.html';
+    } else {
+      window.location.href = 'mobile.html';
+    }
+  }
 
-<script type="text/javascript">
-	var navLinks = document.getElementById("navLinks");
-	function showmenu(){
-		navLinks.style.right = "0";
-	}
-	function hidemenu(){
-		navLinks.style.right = "-200px";
-	}
+  // Show/hide the mobile menu
+  const navLinks = document.getElementById('navLinks');
+  const menuIcon = document.querySelector('.fa-bars');
+  const closeIcon = document.querySelector('.fa-times-circle');
+
+  menuIcon.addEventListener('click', showMenu);
+  closeIcon.addEventListener('click', hideMenu);
+
+  function showMenu() {
+    navLinks.style.right = '0';
+  }
+
+  function hideMenu() {
+    navLinks.style.right = '-200px';
+  }
 </script>
+<!----------------------------------Javascript ended------------------------------------>
 
 
 
